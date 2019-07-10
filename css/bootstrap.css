@@ -34,6 +34,23 @@
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
+.homeButton {
+  position: fixed;
+  left: 15px;
+  top: 15px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: rgba(52, 58, 64, 0.5);
+  line-height: 50px;
+  z-index: 999;
+  font-size: 50px;
+}
+
+.homeButton:hover {
+  color: #343a40;
+}
+
 
 .scrolling-wrapper-flexbox{
   display: flex;
@@ -4676,22 +4693,292 @@ input[type="button"].btn-block {
 }
 
 .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); height: 240px; width: 360px; margin:20px;
   position: relative;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+
+}
+.card:hover{
+  opacity: 1!important;
+  z-index: 10;
+}
+
+
+#la::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .4;
+}
+#ny::before {
+  background-image: url("../img/main5.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#sf::before {
+  background-image: url("../img/main4.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#chi::before {
+  background-image: url("../img/main3.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#bos::before {
+  background-image: url("../img/main2.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}#oak::before {
+  background-image: url("../img/main1.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#par::before {
+  background-image: url("../img/main1.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#bar::before {
+  background-image: url("../img/home1.jpg");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#mil::before {
+  background-image: url("../img/main2.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#bud::before {
+  background-image: url("../img/main3.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#lon::before {
+  background-image: url("../img/main4.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#rom::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#tok::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#bei::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#dub::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#tel::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#kyo::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+#sha::before {
+  background-image: url("../img/main6.JPG");
+  border-radius: 2px;
+
+  background-size: contain;
+  background-size: cover;
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: .5;
+}
+.card > h2 {
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-content: center;
+vertical-align: center;
+color: black;
+min-width: 100%;
+min-height: 240px;
+position: relative;
 }
 
 .card > hr {
   margin-right: 0;
   margin-left: 0;
+}
+.card > container {
+  vertical-align: center !important;
+  padding-top:80px;
+
 }
 
 .card > .list-group:first-child .list-group-item:first-child {
@@ -9717,6 +10004,7 @@ button.bg-dark:focus {
 
 .text-center {
   text-align: center !important;
+
 }
 
 @media (min-width: 576px) {
